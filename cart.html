@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - Fragrance Haven</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css" type="text/css"> <!-- Link to your custom CSS file -->
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="nav-wrapper teal">
+            <a href="#" class="brand-logo center">Fragrance Haven</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="./welcome.html">Home</a></li>
+                <li><a href="./shop.html">Shop</a></li>
+                <li><a href="./cart.html">Cart</a></li>
+                <li><a id="signoutButton" href="#">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h2 class="center-align">Your Cart</h2>
+
+        <div class="buyer-info">
+            <!-- Buyer details will appear here -->
+        </div>
+
+        <table class="highlight">
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                    <th>Remove</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Cart items will be dynamically inserted here -->
+            </tbody>
+        </table>
+
+        <div class="row">
+            <div class="col s12 right-align">
+                <h5 class="total-amount">Total Amount: Rs. 0</h5>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s12 center-align">
+                <a href="#confirmationModal" class="modal-trigger btn teal">Proceed to Checkout</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Confirmation Modal -->
+    <div id="confirmationModal" class="modal">
+        <div class="modal-content">
+            <h4>Order Confirmation</h4>
+            <p>Your order is confirmed! It will take 3 to 5 working days to be shipped.</p>
+        </div>
+        <div class="modal-footer">
+            <button id="checkoutConfirmBtn" class="modal-close btn green">Close</button>
+        </div>
+    </div>
+
+    <footer class="page-footer teal">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 center-align">
+                    <h5 class="white-text">Fragrance Haven</h5>
+                    <p class="grey-text text-lighten-4">Your destination for exquisite fragrances.</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container center-align">
+                © 2023 SnapCart
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="module" src="./script/auth.js"></script>
+</body>
+
+</html>
