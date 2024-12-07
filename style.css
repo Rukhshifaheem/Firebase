@@ -1,0 +1,31 @@
+.half-screen {
+    max-width: 50%;
+    /* Set the width of the product card to half the screen */
+    margin: 0 auto;
+    /* Center align the product card */
+}
+
+nav {
+    margin-bottom: 50px;
+}
+
+.product-img {
+    width: 100%;
+    /* Ensure image fills container width */
+    margin-bottom: 15px;
+}
+
+.product-details {
+    margin-top: 20px;
+}
+
+.price {
+    font-size: 24px;
+    color: #ff5722;
+    font-weight: bold;
+}
+
+.description {
+    font-size: 16px;
+    color: #616161;
+}
